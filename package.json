@@ -4,8 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start-prod": "node ./src/server.js",
-    "start-dev": "node ./src/server.js"
+    "start": "NODE_ENV=production node src/server.js"
   },
   "keywords": [],
   "author": "",
@@ -14,5 +13,10 @@
   "dependencies": {
     "@hapi/hapi": "^21.4.4",
     "nanoid": "^5.1.6"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.2",
+    "eslint": "^9.39.2",
+    "globals": "^16.5.0"
   }
 }
